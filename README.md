@@ -36,6 +36,19 @@ The tools listed can be installed using package managers such as apt or yum. Her
     - sudo yum update
     - sudo yum install tcpdump wireshark ps aux netstat iptables nmap traceroute ifconfig nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
 
+# Installation
+
+1. Clone the repository containing the script to your local machine. You can do this by running the following command in your terminal:
+    - $ git clone https://github.com/cyberfascinate/NetForenScan.git
+2. Change into the directory containing the script:
+    - $ cd NetForenScan
+3. Make the script executable:
+    - $ chmod +x NetForenScan.sh
+4. Run the script:
+    - $ ./NetForenScan.sh
+
+The script will prompt you for the network interface to capture data, and then it will perform various network forensic analysis tasks as described in the script.
+
 # Use Cases for NetForenScan
 
 NetForenScan is a powerful network forensic analysis tool that allows you to capture and analyze network traffic. With its wide range of features, this tool can be used in many different use cases.
