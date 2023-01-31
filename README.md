@@ -1,64 +1,55 @@
-NetForenScan - Network Forensic Analysis Tool
-NetForenScan is a bash shell script designed to perform various network forensic analysis tasks. It is a useful tool for network administrators and security professionals to monitor and analyze network traffic, identify any suspicious activity, and maintain the security and performance of the network. This guide will provide a detailed explanation of how to use the script and the various use cases.
+# NetForenScan - Network Forensic Analysis Tool
 
-Prerequisites
+NetForenScan is a bash shell script designed to perform various network forensic analysis tasks. It is a useful tool for network administrators and security professionals to monitor and analyze network traffic, identify any suspicious activity, and maintain the security and performance of the network.
+
+# Prerequisites
 Before using the script, make sure you have the following tools installed on your system:
 
-tcpdump
-Wireshark
-ps aux
-netstat
-iptables
-nmap
-traceroute
-ifconfig
-nethogs
-nload
-slurm
-iftop
-collectl
-etherape
-tcpflow
-iptraf-ng
-speedometer
-bmon
-iperf3
-monitorix
-How to Use the Script
-Download the script and make it executable:
-bash
-Copy code
-wget https://raw.githubusercontent.com/NetForenScan/NetForenScan/master/NetForenScan.sh
-chmod +x NetForenScan.sh
-Run the script:
-Copy code
-./NetForenScan.sh
-The script will prompt you to enter the network interface to capture data:
-kotlin
-Copy code
-Enter the network interface to capture data: 
-Enter the name of the network interface you want to capture data from. For example, if you want to capture data from the Ethernet interface, enter eth0.
+- tcpdump
+- Wireshark
+- ps aux
+- netstat
+- iptables
+- nmap
+- traceroute
+- ifconfig
+- nethogs
+- nload
+- slurm
+- iftop
+- collectl
+- etherape
+- tcpflow
+- iptraf-ng
+- speedometer
+- bmon
+- iperf3
+- monitorix
 
-The script will then perform the following tasks:
+The tools listed can be installed using package managers such as apt or yum. Here are some commands for commonly used systems:
 
-Capture network traffic using tcpdump and save it to a file named data.pcap.
-Analyze the captured network traffic using Wireshark.
-Check for suspicious processes using ps aux and grep for root, kworker, and systemd.
-Check for open connections using netstat -ntulp.
-Check firewall rules using iptables -L -n.
-Scan for open ports using nmap -sT localhost.
-Check the network route using traceroute localhost.
-Check network configuration using ifconfig.
-Monitor network traffic by process using nethogs $INTERFACE.
-Display network usage using nload $INTERFACE.
-Display network traffic statistics using slurm -i $INTERFACE.
-Display bandwidth usage on an interface using iftop -i $INTERFACE.
-Collect performance data using collectl.
-Visualize network activity using etherape.
-Capture and analyze TCP traffic using tcpflow -c -i $INTERFACE.
-Monitor IP traffic using iptraf-ng -i $INTERFACE.
-Display network speed using speedometer -r $INTERFACE -t $INTERFACE.
-Monitor network bandwidth using bmon -p $INTERFACE.
-Measure network performance using iperf3 -c localhost.
-Monitor system and network performance using monitorix.
-Use Cases
+- Debian/Ubuntu
+  - sudo apt-get update
+  - sudo apt-get install tcpdump wireshark ps aux netstat iptables nmap traceroute ifconfig nethogs nload slurm iftop    collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
+
+ - CentOS/Fedora
+    - sudo yum update
+    - sudo yum install tcpdump wireshark ps aux netstat iptables nmap traceroute ifconfig nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
+
+# Use Cases for NetForenScan
+
+NetForenScan is a powerful network forensic analysis tool that allows you to capture and analyze network traffic. With its wide range of features, this tool can be used in many different use cases.
+
+1. Investigating network security incidents: This tool can be used to investigate network security incidents, such as unauthorized access, data theft, and other malicious activities. The tool can be used to capture network traffic and analyze it to identify any suspicious processes, open connections, firewall rules, open ports, and other important information.
+
+2. Debugging network issues: NetForenScan can be used to troubleshoot network issues, such as slow network speeds, frequent disconnections, and other problems. The tool can help identify the source of the issue by monitoring network traffic and displaying network usage, traffic statistics, and bandwidth usage.
+
+3. Monitoring network performance: This tool can be used to monitor network performance, such as network speed, performance, and bandwidth usage. The tool provides a visual representation of network activity, making it easy to identify any performance bottlenecks.
+
+4. Collecting performance data: NetForenScan can be used to collect performance data, such as system performance, network performance, and other important metrics. The tool provides detailed performance statistics, making it easy to identify performance trends and issues.
+
+5. Capturing and analyzing TCP traffic: The tool can be used to capture and analyze TCP traffic, making it easy to identify any issues with the transmission of data over the network. This is particularly useful for troubleshooting issues with data transmission and for identifying any performance bottlenecks.
+
+6. Measuring network performance: NetForenScan can be used to measure network performance, such as network speed and performance. The tool provides detailed performance statistics, making it easy to identify performance trends and issues.
+
+In conclusion, NetForenScan is a versatile network forensic analysis tool that can be used in many different use cases. Whether you are investigating network security incidents, debugging network issues, monitoring network performance, collecting performance data, capturing and analyzing TCP traffic, or measuring network performance, this tool provides the tools and information you need to get the job done.
