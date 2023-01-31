@@ -66,3 +66,7 @@ NetForenScan is a powerful network forensic analysis tool that allows you to cap
 6. Measuring network performance: NetForenScan can be used to measure network performance, such as network speed and performance. The tool provides detailed performance statistics, making it easy to identify performance trends and issues.
 
 In conclusion, NetForenScan is a versatile network forensic analysis tool that can be used in many different use cases. Whether you are investigating network security incidents, debugging network issues, monitoring network performance, collecting performance data, capturing and analyzing TCP traffic, or measuring network performance, this tool provides the tools and information you need to get the job done.
+
+# Disclaimer
+
+It is important to note that this script, NetForenScan, should only be used for legitimate and lawful purposes. Any unauthorized or illegal use of this script is strictly prohibited and may result in legal consequences. Please ensure that you have proper authorization and a valid reason for using this script before proceeding with its installation and usage.
