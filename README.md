@@ -18,7 +18,6 @@ Before using the script, make sure you have the following tools installed on you
 - slurm
 - iftop
 - collectl
-- 
 - tcpflow
 - iptraf-ng
 - iperf3
