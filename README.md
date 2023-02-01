@@ -18,23 +18,20 @@ Before using the script, make sure you have the following tools installed on you
 - slurm
 - iftop
 - collectl
-- etherape
+- 
 - tcpflow
 - iptraf-ng
-- speedometer
-- bmon
 - iperf3
-- monitorix
 
 The tools listed can be installed using package managers such as apt or yum. Here are some commands for commonly used systems:
 
 - Debian/Ubuntu
   - sudo apt-get update
-  - sudo apt-get install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix -y
+  - sudo apt-get install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng bmon iperf3 -y
 
  - CentOS/Fedora
     - sudo yum update
-    - sudo yum install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
+    - sudo yum install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl tcpflow iptraf-ng speedometer bmon iperf3 monitorix
 
 # Installation
 

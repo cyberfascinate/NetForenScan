@@ -62,10 +62,6 @@ iftop -i $INTERFACE
 echo "Collecting performance data:"
 collectl
 
-#Use etherape to visualize network activity
-echo "Visualizing network activity:"
-etherape
-
 #Use tcpflow to capture and analyze TCP traffic
 echo "Capturing and analyzing TCP traffic:"
 tcpflow -c -i $INTERFACE
@@ -73,10 +69,6 @@ tcpflow -c -i $INTERFACE
 #Use iptraf to monitor IP traffic
 echo "Monitoring IP traffic:"
 iptraf-ng -i $INTERFACE
-
-#Use speedometer to display network speed
-echo "Displaying network speed:"
-speedometer -r $INTERFACE -t $INTERFACE
 
 #Use bmon to monitor network bandwidth
 echo "Monitoring network bandwidth:"
@@ -86,6 +78,3 @@ bmon -p $INTERFACE
 echo "Measuring network performance:"
 iperf3 -c localhost
 
-#Use monitorix to monitor system and network performance
-echo "Monitoring system and network performance:"
-monitorix
