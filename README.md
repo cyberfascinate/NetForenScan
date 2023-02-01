@@ -30,11 +30,11 @@ The tools listed can be installed using package managers such as apt or yum. Her
 
 - Debian/Ubuntu
   - sudo apt-get update
-  - sudo apt-get install tcpdump wireshark iptables nmap traceroute ifconfig nethogs nload slurm iftop    collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
+  - sudo apt-get install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix -y
 
  - CentOS/Fedora
     - sudo yum update
-    - sudo yum install tcpdump wireshark ps aux netstat iptables nmap traceroute ifconfig nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
+    - sudo yum install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng speedometer bmon iperf3 monitorix
 
 # Installation
 
