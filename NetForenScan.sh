@@ -15,9 +15,6 @@ read INTERFACE
 #Capture network traffic using tcpdump
 tcpdump -i $INTERFACE -w data.pcap
 
-#Analyze network traffic using Wireshark
-wireshark data.pcap &
-
 #Use ps aux to check for suspicious processes
 echo "Checking for suspicious processes:"
 ps aux | grep -E "root|kworker|systemd"

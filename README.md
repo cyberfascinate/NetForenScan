@@ -6,7 +6,6 @@ NetForenScan is a bash shell script designed to perform various network forensic
 Before using the script, make sure you have the following tools installed on your system:
 
 - tcpdump
-- Wireshark
 - ps aux
 - netstat
 - iptables
@@ -26,11 +25,11 @@ The tools listed can be installed using package managers such as apt or yum. Her
 
 - Debian/Ubuntu
   - sudo apt-get update
-  - sudo apt-get install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl etherape tcpflow iptraf-ng bmon iperf3 -y
+  - sudo apt-get install tcpdump iptables nmap traceroute nethogs nload slurm iftop collectl  tcpflow iptraf-ng bmon iperf3 -y
 
  - CentOS/Fedora
     - sudo yum update
-    - sudo yum install tcpdump wireshark iptables nmap traceroute nethogs nload slurm iftop collectl tcpflow iptraf-ng speedometer bmon iperf3 monitorix
+    - sudo yum install tcpdump iptables nmap traceroute nethogs nload slurm iftop collectl tcpflow iptraf-ng bmon iperf3 
 
 # Installation
 
